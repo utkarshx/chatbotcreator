@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Agents</title>
+</head>
+<body>
+	<div style="float:left;">
+		<div style="color:grey;">User:</div>
+		 <div style="color:blue;">
+		 	<select name="" id="">
+			 	<option value=""><!-- Field -->Input</option>
+			 	<option value=""><!-- Intent -->Text</option>
+			</select>  
+			VarName      VarType ||or|| IntentName
+		</div>
+			Training- My Boarding time is <span style="color:blue;">3 pm</span>.
+	</div>
+	<div style="clear: both;"></div>
+	<div style="float:right;">
+		<div style="color:grey;">Bot:</div>
+		<div>
+			say: (ok hi {variable}) <br>
+			+ Add Variable	
+		</div>
+	</div>
+	<div style="clear: both;"></div>
+	<div style="float:right;">
+		<div style="color:grey;">Bot:</div>
+		<div>
+			functionname(context) <br>
+			produces context "context1" "context2" <br>
+			+ Add Context
+		</div>
+	</div>
+	<div style="clear: both;"></div>
+	<div style="float:left;">
+		<div style="color:grey;">User:</div>
+		<div>
+			<a href="substory.html">SubstoryName</a> <br>
+			varname  -  Vartype
+		</div>
+	</div>
+
+	<div style="position: fixed; bottom:0; height: 40px; background-color: grey; color: white; width: 100%; left: 0; padding-left: 50px; padding-top: 20px;">
+		<div style="float: right; padding-bottom: 60px; padding-right: 60px;">
+			<input type="submit" value="Add Bot Chat"></input>
+			<input type="submit" value="Add Bot Function"></input>
+		</div>
+		<div>
+			<input type="submit" value="Add Single Chat"></input>
+			<input type="submit" value="Add MultiVar Substory"></input>
+		</div>
+		
+	</div>
+</body>
+</html>

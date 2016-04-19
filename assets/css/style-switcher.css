@@ -1,0 +1,185 @@
+/*--------------------------------------------------
+    [Style Switcher]
+----------------------------------------------------*/
+
+.style-switcher {
+    position: relative;
+}
+
+/* Button */
+.style-switcher .style-switcher-btn {
+    position: fixed;
+    top: 200px;
+    left: 0;
+    width: 45px;
+    height: 45px;
+    display: block;
+    z-index: 9999;
+    background: #ebeef6;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    cursor: pointer;
+    transition-duration: 400ms;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+}
+
+.style-switcher .style-switcher-btn.is-clicked {
+    left: 348px;
+    transition-duration: 400ms;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+}
+
+.style-switcher .style-switcher-btn .fa {
+    display: inline-block;
+    font-size: 22px;
+    color: #34343c;
+    line-height: .9;
+    text-align: center;
+    vertical-align: middle;
+    padding: 13px;
+}
+
+.style-switcher .style-switcher-btn .fa-animation {
+    -webkit-animation: fa-spin 6s infinite linear;
+    -moz-animation: fa-spin 6s infinite linear;
+    -o-animation: fa-spin 6s infinite linear;
+    animation: fa-spin 6s infinite linear
+}
+
+/* Body */
+.style-switcher .style-switcher-body {
+    position: fixed;
+    top: 150px;
+    left: 0;
+    width: 350px;
+    height: 400px;
+    z-index: 9999;
+    color: #fff;
+    background: #f7f8fa;
+    overflow: auto;
+    visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    padding: 30px 20px;
+    margin-left: -350px;
+    transition-duration: 400ms;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+}
+
+.style-switcher .style-switcher-body.is-active {
+    visibility: visible;
+    margin-left: 0;
+    transition-duration: 400ms;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+}
+
+/* Title */
+.style-switcher .style-switcher-title {
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    color: #34343c;
+    margin-bottom: 15px;
+}
+
+.style-switcher-title-lg {
+    font-size: 26px;
+    font-weight: 400;
+    text-align: center;
+    color: #34343c;
+    border-bottom: 1px solid #ebeef6;
+    padding-bottom: 25px;
+    margin-bottom: 30px;
+}
+
+/* Theme Colors */
+.style-switcher .color-options {
+    width: 23px;
+    height: 23px;
+    display: inline-block;
+    opacity: .5;
+    border-radius: 3px;
+    cursor: pointer;
+    margin: 0 3px 3px 0;
+}
+
+.style-switcher .color-options.theme-active {
+    opacity: 1;
+}
+
+.style-switcher .color-options.theme-base {
+    background: #00bcd4;
+}
+.style-switcher .color-options.theme-blue {
+    background: #536dfe;
+}
+.style-switcher .color-options.theme-blue-grey {
+    background: #546e7a;
+}
+.style-switcher .color-options.theme-gold {
+    background: #c69f73;
+}
+.style-switcher .color-options.theme-green {
+    background: #4fd2c2;
+}
+.style-switcher .color-options.theme-grey {
+    background: #9e9e9e;
+}
+.style-switcher .color-options.theme-pink {
+    background: #e91e63;
+}
+.style-switcher .color-options.theme-purple {
+    background: #b260ce;
+}
+.style-switcher .color-options.theme-red {
+    background: #e55973;
+}
+.style-switcher .color-options.theme-teal {
+    background: #009688;
+}
+
+/* Deno */
+.style-switcher .style-switcher-demo {
+    position: relative;
+}
+
+.style-switcher .style-switcher-demo:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(52, 52, 60, 0.7);
+    content: " ";
+}
+
+.style-switcher .style-switcher-demo:hover:before {
+    background: rgba(0, 188, 212, 0.7);
+}
+
+.style-switcher .style-switcher-demo-title {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    -webkit-transform: translate3d(0, -50%, 0);
+    -moz-transform: translate3d(0, -50%, 0);
+    transform: translate3d(0, -50%, 0);
+}
+
+.style-switcher .style-switcher-demo-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    z-index: 3;
+    text-decoration: none;
+}
